@@ -46,6 +46,7 @@ jobs:
           python manage.py migrate
 
       - name: Run tests
+        working-directory: my-django-app  # Update this to your actual folder structure
         run: |
           python manage.py test
 
