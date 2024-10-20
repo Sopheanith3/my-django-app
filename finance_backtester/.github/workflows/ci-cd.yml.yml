@@ -39,14 +39,14 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run migrations
-        working-directory: C:\Users\nysop\Desktop\Django\finance_backtester\manage.py  # Update this to your actual folder 
+        working-directory: manage.py  # Update this to your actual folder 
         env:
           DATABASE_URL: postgres://myuser:mypassword@localhost/mydatabase
         run: |
           python manage.py migrate
 
       - name: Run tests
-        working-directory: C:\Users\nysop\Desktop\Django\finance_backtester\manage.py  # Update this to your actual folder structure
+        working-directory: manage.py  # Update this to your actual folder structure
         run: |
           python manage.py test
 
