@@ -41,11 +41,11 @@ jobs:
       - name: Run migrations
         env:
           DATABASE_URL: postgres://myuser:mypassword@localhost/mydatabase
-        run: |
+        run: | C:\Users\nysop\Desktop\Django\finance_backtester\manage.py
           python manage.py migrate
 
       - name: Run tests
-        run: |
+        run: | C:\Users\nysop\Desktop\Django\finance_backtester\manage.py
           python manage.py test
 
       - name: Build Docker image
