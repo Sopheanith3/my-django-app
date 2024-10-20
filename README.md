@@ -35,3 +35,38 @@ This Django-based application fetches financial data from a public API, implemen
    ```bash
    git clone https://github.com/yourusername/your-repo-name.git
    cd your-repo-name
+
+Create a Virtual Environment:
+
+bash
+Copy code
+python -m venv venv
+# On Windows
+venv\Scripts\activate
+# On macOS/Linux
+source venv/bin/activate
+Install Dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Configure Environment Variables: Create a .env file in the root of the project and add your environment variables:
+
+makefile
+Copy code
+DATABASE_NAME=your_database_name
+DATABASE_USER=your_database_user
+DATABASE_PASSWORD=your_database_password
+DATABASE_HOST=localhost
+DATABASE_PORT=5432
+ALPHA_VANTAGE_API_KEY=your_alpha_vantage_api_key
+Run Migrations:
+
+bash
+Copy code
+python manage.py migrate
+Start the Development Server:
+
+bash
+Copy code
+python manage.py runserver
